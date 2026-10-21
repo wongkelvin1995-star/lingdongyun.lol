@@ -1,23 +1,87 @@
-# 灵动云官网 · lingdongyun.lol
+<div align="center">
 
-灵动云（lingdongyun）官网落地页，纯静态网页，无需构建。
+<a href="https://lingdongyun.lol/"><img src="logo-512.png" width="120" alt="灵动云 LOGO"></a>
 
-## 文件
+# 灵动云官网
 
-| 文件 | 说明 |
-|---|---|
-| `index.html` | 首页（含 SEO 标签、结构化数据、10 条常见问题） |
-| `robots.txt` | 搜索引擎抓取规则 |
-| `sitemap.xml` | 站点地图，提交到 Google Search Console 与百度搜索资源平台 |
-| `logo.svg` / `logo-512.png` | 品牌 LOGO（矢量 / 512px） |
-| `favicon.svg` / `apple-touch-icon.png` | 浏览器标签页图标 / iPhone 主屏幕图标 |
-| `CNAME` | GitHub Pages 自定义域名（lingdongyun.lol） |
+**LINGDONG CLOUD · lingdongyun**
 
-## 部署
+### 🌐 官网地址：[lingdongyun.lol](https://lingdongyun.lol/)
 
-- **GitHub Pages**：仓库 Settings → Pages → Source 选 `main` 分支根目录；在域名服务商把 lingdongyun.lol 解析到 GitHub Pages。
-- **其他主机 / Cloudflare Pages / Vercel**：直接部署仓库根目录即可。
+月付 · 年付 · 一次性流量包，8 档套餐按预算与用量自由选择
 
-## 修改订购链接
+<a href="https://lingdongyun.lol/"><img src="https://img.shields.io/badge/进入灵动云官网-lingdongyun.lol-6633F2?style=for-the-badge" alt="进入灵动云官网"></a>
+&nbsp;
+<a href="https://varnexa.lingdongaff.com/#/?code=HHoxxHGa"><img src="https://img.shields.io/badge/注册%20%2F%20登录-立即订购-7A45FF?style=for-the-badge" alt="注册 / 登录"></a>
 
-所有「注册 / 登录」「选择套餐」「选择流量包」「前往官网获取客户端」按钮都指向同一个订购地址，在 `index.html` 中全局替换即可。
+</div>
+
+---
+
+## ✨ 灵动云优势
+
+| | 优势 | 说明 |
+|:-:|---|---|
+| 💰 | **入门门槛低** | 月付 ¥20 起，年付仅 ¥99 / 年 |
+| 🧩 | **8 档套餐灵活选** | 月付、年付、一次性流量包三种付款方式，轻量到重度用量全覆盖 |
+| 📈 | **大流量可选** | 最高 1.5TB / 月，重度用户也够用 |
+| 📦 | **流量包不按月清零** | 一次性付款获得总流量，适合用量不固定、偶尔使用的用户 |
+| 💻 | **全平台覆盖** | Windows · macOS · Android · iOS 均有客户端指南 |
+| ⚡ | **四步即可上手** | 注册 → 选套餐 → 复制订阅 → 导入 Clash，附完整图文教程 |
+| 🛠️ | **故障排查有指引** | 订阅更新失败、无法连接等问题都有官网教程 |
+
+---
+
+## 💎 套餐价格
+
+### 月付方案：每月发放流量
+
+| 套餐 | 价格 | 流量 |
+|---|:-:|:-:|
+| 🌬️ 灵动·拂风 | **¥20** / 月起 | 100GB / 月 |
+| 🌊 灵动·驭浪 | **¥50** / 月起 | 300GB / 月 |
+| 🌅 灵动·破晓 | **¥100** / 月起 | 700GB / 月 |
+| 🏔️ 灵动·凌霄 | **¥180** / 月起 | 1.5TB / 月 |
+
+### 年付方案：一次付清全年，每月发放流量
+
+| 套餐 | 价格 | 流量 |
+|---|:-:|:-:|
+| ☁️ 灵动·穿云 | **¥99** / 年 | 每月 70GB |
+
+### 一次性流量包：一次付款，获得总流量
+
+| 套餐 | 价格 | 流量 |
+|---|:-:|:-:|
+| 🌥️ 灵动·闲云 | **¥199** | 总流量 150GB |
+| ⛅ 灵动·惊云 | **¥499** | 总流量 400GB |
+| 🌤️ 灵动·飞云 | **¥899** | 总流量 800GB |
+
+> 具体套餐规则以订购页面为准。
+
+---
+
+## 🤔 怎么选？
+
+- **每月用量稳定**：选月付。约 100GB 选拂风，约 300GB 选驭浪，约 700GB 选破晓，更高选凌霄
+- **每月 70GB 以内、想省心**：选年付穿云，¥99 用一整年
+- **用量不固定 / 偶尔使用**：选一次性流量包，按总量购买
+
+---
+
+## 🚀 快速开始
+
+1. 打开 **[灵动云官网 lingdongyun.lol](https://lingdongyun.lol/)**，点击「注册 / 登录」
+2. 按用量与预算选择套餐
+3. 在账户页面复制订阅链接
+4. 导入 Clash 等客户端，更新后即可使用
+
+---
+
+<div align="center">
+
+**认准灵动云官网：[lingdongyun.lol](https://lingdongyun.lol/)**
+
+搜索灵动云、灵动云官网、灵动云机场、灵动云VPN、lingdongyun，都请认准此域名，谨防仿冒
+
+</div>
