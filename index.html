@@ -83,9 +83,9 @@ html.ldy-motion :is(#steps .h2c, .steps > li, .stp .sh, .stp > .lede, .stp > .ti
   "@graph": [
     {
       "@type": "Organization",
-      "@id": "https://lingdongyun.site/#org",
+      "@id": "https://lingdongyun.lol/#org",
       "name": "灵动云",
-      "url": "https://lingdongyun.site/"
+      "url": "https://lingdongyun.lol/"
     },
     {
       "@type": "WebSite",
@@ -94,7 +94,7 @@ html.ldy-motion :is(#steps .h2c, .steps > li, .stp .sh, .stp > .lede, .stp > .ti
       "url": "https://lingdongyun.lol/",
       "description": "注册、选套餐、导入订阅、连接，4 步上手",
       "inLanguage": "zh-CN",
-      "publisher": {"@id": "https://lingdongyun.site/#org"}
+      "publisher": {"@id": "https://lingdongyun.lol/#org"}
     },
     {
       "@type": "FAQPage",
@@ -102,13 +102,12 @@ html.ldy-motion :is(#steps .h2c, .steps > li, .stp .sh, .stp > .lede, .stp > .ti
       "inLanguage": "zh-CN",
       "isPartOf": {"@id": "https://lingdongyun.lol/#website"},
       "mainEntity": [
-        {"@type": "Question", "name": "客户端、订阅和节点是什么关系？", "acceptedAnswer": {"@type": "Answer", "text": "套餐决定你能用多少流量；订阅是一条带访问令牌的链接，客户端靠它下载节点列表；节点是部署在各地区的服务器，连接时从中选一个。一句话：买套餐拿到订阅，订阅交给客户端，客户端连上节点。想把这几个概念弄得更清楚，可以读使用指南里的概念说明。"}},
+        {"@type": "Question", "name": "客户端、订阅和节点是什么关系？", "acceptedAnswer": {"@type": "Answer", "text": "套餐决定你能用多少流量；订阅是一条带访问令牌的链接，客户端靠它下载节点列表；节点是部署在各地区的服务器，连接时从中选一个。一句话：买套餐拿到订阅，订阅交给客户端，客户端连上节点。"}},
         {"@type": "Question", "name": "需要自己写配置文件、懂技术吗？", "acceptedAnswer": {"@type": "Answer", "text": "不需要。订阅导入后，客户端会自动下载节点和配置，你只要选节点、打开连接。大多数设置保持默认就能用，虚拟网卡（TUN）这类进阶选项，等用熟了再研究也不迟。"}},
         {"@type": "Question", "name": "一个账号能在几台设备上用？", "acceptedAnswer": {"@type": "Answer", "text": "不限设备数量，电脑、手机、平板都可以导入同一个账号的订阅。这些设备共用套餐流量，设备多、用得多时，选档位要把它们一起算进去。订阅链接只在自己的设备上用，不要分享给别人。"}},
         {"@type": "Question", "name": "流量用完或套餐到期会怎样？", "acceptedAnswer": {"@type": "Answer", "text": "月付套餐每月有固定额度；年付的灵动·穿云每 30 天自动重置 70GB；一次性流量包永久有效、用完为止。额度用完或套餐到期后，客户端里的节点一般会全部超时，到用户中心查看套餐状态，续费或重新选购后即可继续使用。"}},
-        {"@type": "Question", "name": "节点在哪些地区？能看流媒体、用 AI 工具吗？", "acceptedAnswer": {"@type": "Answer", "text": "节点覆盖香港、台湾、日本、新加坡、美国等地区，使用 IEPL / IPLC 优化线路和 SS（Shadowsocks）协议。支持 Netflix、Disney+、YouTube 等流媒体，也适配 ChatGPT、Claude 等 AI 工具；使用时的注意事项见帮助中心的流媒体与 AI 工具说明。"}},
-        {"@type": "Question", "name": "遇到问题怎么联系客服？", "acceptedAnswer": {"@type": "Answer", "text": "有两个渠道：在帮助中心 lingdongyun.sbs 打开在线客服对话，或者登录用户中心提交工单。描述问题时写清设备、客户端名称和看到的提示，排查会顺利很多。"}},
-        {"@type": "Question", "name": "为什么灵动云有好几个官方站点？", "acceptedAnswer": {"@type": "Answer", "text": "灵动云把内容分给五个官方站点，各管一件事：官网 lingdongyun.site 介绍品牌和套餐，使用指南讲客户端教程，套餐选择帮你比较套餐、估算流量，帮助中心负责排查问题和在线客服，本站只讲第一次使用的四个步骤。完整名单见下方的「灵动云官方站点」。"}}
+        {"@type": "Question", "name": "节点在哪些地区？能看流媒体、用 AI 工具吗？", "acceptedAnswer": {"@type": "Answer", "text": "节点覆盖香港、台湾、日本、新加坡、美国等地区，使用 IEPL / IPLC 优化线路和 SS（Shadowsocks）协议。支持 Netflix、Disney+、YouTube 等流媒体，也适配 ChatGPT、Claude 等 AI 工具。"}},
+        {"@type": "Question", "name": "遇到问题怎么联系客服？", "acceptedAnswer": {"@type": "Answer", "text": "遇到问题，请登录用户中心提交工单。描述问题时写清设备、客户端名称和看到的提示，排查会顺利很多。"}}
       ]
     }
   ]
@@ -305,18 +304,6 @@ a{color:var(--pri);text-decoration:none}a:hover{color:var(--pri-d)}
 .faq summary svg{flex-shrink:0;width:32px;height:32px;padding:6px;border-radius:50%;background:#FFFFFF;box-shadow:0 0 0 1px var(--line);color:var(--ink2);transition:transform .3s var(--ease),background-color .2s,color .2s}
 .faq details[open] summary svg{transform:rotate(180deg);background:var(--h);color:#FFFFFF;box-shadow:none}
 .faq p{max-width:52em;padding:0 24px 22px;font-size:15.5px;line-height:1.9;color:var(--ink2)}
-/* family */
-.fam-i{margin-top:10px;font-size:15.5px;color:var(--ink2)}
-.fam{list-style:none;margin:22px 0 0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}
-.fam li{position:relative;display:flex;flex-direction:column;padding:16px 18px 20px}
-.fam a,.fam .fn{display:inline-flex;align-items:center;flex-wrap:wrap;gap:4px 8px;min-height:44px;font-size:16px;font-weight:700}
-.fam .fn{color:var(--ink)}
-.fam small{font-size:12.5px;color:var(--mute)}
-.fam p{margin-top:8px;font-size:14px;line-height:1.75;color:var(--ink2)}
-.fam .cur{border:2px solid transparent;background:linear-gradient(#FEFDFF,#FEFDFF) padding-box,var(--journey) border-box}
-.fam .cur .badge{position:absolute;top:-11px;right:14px}
-.fam-o{margin-top:16px}
-.fam-o a{display:inline-flex;align-items:center;gap:8px;min-height:44px;font-size:15.5px;font-weight:600}
 /* footer */
 .ftr{position:relative;margin-top:80px;background:linear-gradient(rgba(255,255,255,0),rgba(255,255,255,.65))}
 .ftr::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;background:var(--journey);opacity:.55}
@@ -336,7 +323,7 @@ a{color:var(--pri);text-decoration:none}a:hover{color:var(--pri-d)}
 /* paused while off screen */
 .off .lyr,.off .flow,.off .mesh i,.off .beam i,.off .n{animation-play-state:paused}
 /* responsive */
-@media (max-width:1100px){.og{grid-template-columns:200px minmax(0,1fr)}.og-l{grid-template-columns:repeat(2,minmax(0,1fr))}.fam{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:1100px){.og{grid-template-columns:200px minmax(0,1fr)}.og-l{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:1000px){
 .track{--g:14px}
 .steps{grid-template-columns:minmax(0,1fr);grid-auto-rows:1fr}
@@ -348,7 +335,7 @@ a{color:var(--pri);text-decoration:none}a:hover{color:var(--pri-d)}
 @keyframes runv{0%{transform:translateY(-100%);opacity:1}57%{opacity:1}60%,100%{transform:translateY(0);opacity:0}}
 @media (max-width:980px){.hero-in{grid-template-columns:minmax(0,1fr);gap:8px;padding-top:44px}.hero h1{font-size:clamp(40px,8vw,64px)}.art{width:100%;max-width:640px;margin:0 auto}}
 @media (max-width:860px){.nav,.login{display:none}.burger{display:inline-flex}}
-@media (max-width:760px){.g3,.g2{grid-template-columns:minmax(0,1fr)}.og{grid-template-columns:minmax(0,1fr);gap:14px;padding:20px 18px}.fam{grid-template-columns:repeat(2,minmax(0,1fr))}.stage{padding:40px 20px 44px;border-radius:28px}.stp{padding-top:80px}}
+@media (max-width:760px){.g3,.g2{grid-template-columns:minmax(0,1fr)}.og{grid-template-columns:minmax(0,1fr);gap:14px;padding:20px 18px}.stage{padding:40px 20px 44px;border-radius:28px}.stp{padding-top:80px}}
 @media (max-width:560px){
 .wrap{padding-left:16px;padding-right:16px}
 .hero-in{padding-top:32px}
@@ -367,38 +354,8 @@ a{color:var(--pri);text-decoration:none}a:hover{color:var(--pri-d)}
 .og-l{grid-template-columns:minmax(0,1fr);gap:8px}.og-l li{display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:12px;align-items:center;padding:12px 14px}.og-l b{grid-row:1/3}.pp{margin-top:0;font-size:19px;text-align:right}.pt{text-align:right}
 .dev thead{display:none}.dev table,.dev tbody,.dev tr,.dev th,.dev td{display:block;width:100%}.dev tr{padding:12px 16px 6px;border-bottom:1px solid var(--line)}.dev tbody tr:last-child{border-bottom:0}.dev th,.dev td,.dev tbody th{padding:0;border:0;white-space:normal}.dev td{margin-top:2px;font-size:14px;color:var(--ink2)}.dev td a{min-height:40px;margin-right:18px}
 .faq summary{padding:12px 16px}.faq p{padding:0 16px 18px}
-.fam{grid-template-columns:minmax(0,1fr)}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.beam i{display:none}}
-/* 灵动云官方站点导航：五站共用，勿单独修改（源文件 tools/gnav.py） */
-.ldy-gn{position:relative;z-index:60;background:#110b2b;color:#ddd7fb;border-bottom:1px solid rgba(255,255,255,.08);padding-top:env(safe-area-inset-top,0px);font:500 13.5px/1 "PingFang SC","HarmonyOS Sans SC","MiSans","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",system-ui,-apple-system,sans-serif;letter-spacing:.01em;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%;text-size-adjust:100%}
-.ldy-gn *,.ldy-gn *::before,.ldy-gn *::after{box-sizing:border-box}
-.ldy-gn .ldy-gn__in{display:flex;align-items:center;gap:20px;max-width:1200px;height:40px;margin:0 auto;padding:0 max(20px,env(safe-area-inset-right,0px)) 0 max(20px,env(safe-area-inset-left,0px))}
-.ldy-gn a{color:inherit;text-decoration:none;-webkit-tap-highlight-color:transparent}
-.ldy-gn .ldy-gn__brand{display:inline-flex;flex:none;align-items:center;gap:9px;height:100%;color:#fff}
-.ldy-gn .ldy-gn__logo{display:block;flex:none;width:22px;height:22px;margin:0;border:0}
-.ldy-gn .ldy-gn__name{font-size:14px;font-weight:600;letter-spacing:.04em;color:#fff}
-.ldy-gn .ldy-gn__tag{padding-left:9px;border-left:1px solid rgba(255,255,255,.18);font-size:12.5px;font-weight:500;color:rgba(221,215,251,.66)}
-.ldy-gn .ldy-gn__list{display:flex;align-items:stretch;gap:2px;height:100%;margin:0 0 0 auto;padding:0;list-style:none}
-.ldy-gn .ldy-gn__list li{display:flex;margin:0;padding:0;list-style:none}
-.ldy-gn .ldy-gn__list li::before,.ldy-gn .ldy-gn__list li::marker{content:none}
-.ldy-gn .ldy-gn__link{position:relative;display:inline-flex;align-items:center;height:100%;padding:0 12px;white-space:nowrap;color:rgba(221,215,251,.74);transition:color .15s ease}
-.ldy-gn .ldy-gn__link:hover{color:#fff}
-.ldy-gn .ldy-gn__link[aria-current]{color:#fff;font-weight:600}
-.ldy-gn .ldy-gn__link[aria-current]::after{content:"";position:absolute;left:12px;right:12px;bottom:0;height:2px;border-radius:2px 2px 0 0;background:#a693ff}
-.ldy-gn .ldy-gn__brand:focus-visible,.ldy-gn .ldy-gn__link:focus-visible{outline:2px solid #b9abff;outline-offset:-3px;border-radius:6px}
-@media (max-width:720px){
-.ldy-gn .ldy-gn__in{gap:4px;height:44px;padding-right:0;padding-left:max(14px,env(safe-area-inset-left,0px))}
-.ldy-gn .ldy-gn__tag{display:none}
-.ldy-gn .ldy-gn__list{flex:1 1 auto;min-width:0;margin-left:0;padding:0 8px 0 4px;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x proximity;scrollbar-width:none;-webkit-overflow-scrolling:touch;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 8px,#000 calc(100% - 14px),transparent);mask-image:linear-gradient(90deg,transparent 0,#000 8px,#000 calc(100% - 14px),transparent)}
-.ldy-gn .ldy-gn__list::-webkit-scrollbar{display:none}
-.ldy-gn .ldy-gn__list li{scroll-snap-align:start}
-.ldy-gn .ldy-gn__link{padding:0 7px;font-size:13.5px}
-.ldy-gn .ldy-gn__link[aria-current]::after{left:7px;right:7px}
-}
-@media (max-width:480px){.ldy-gn .ldy-gn__name{display:none}.ldy-gn .ldy-gn__brand{min-width:40px}}
-@media (prefers-reduced-motion:reduce){.ldy-gn .ldy-gn__link{transition:none}}
-@media print{.ldy-gn{display:none}}
 </style>
 <!-- 悬停或按下链接时预先加载同站页面，点击后打开更快（只在支持的浏览器生效） -->
 <script type="speculationrules">{"prefetch":[{"where":{"and":[{"href_matches":"/*"},{"not":{"selector_matches":"[target=_blank], [download], [rel~=nofollow]"}}]},"eagerness":"moderate"}]}</script>
@@ -424,7 +381,6 @@ if(u.href.split('#')[0]===location.href.split('#')[0])return;
 show()},false);
 addEventListener('pageshow',function(e){if(e.persisted)clear()})}catch(e){}})();</script><!-- /ldy-motion:intro -->
 
-<nav class="ldy-gn" aria-label="灵动云官方站点"><div class="ldy-gn__in"><a class="ldy-gn__brand" href="https://lingdongyun.site/" aria-label="灵动云官网"><img class="ldy-gn__logo" src="/brand/logo.svg" width="22" height="22" alt="" decoding="async"><span class="ldy-gn__name">灵动云</span><span class="ldy-gn__tag">官方站点</span></a><ul class="ldy-gn__list" id="ldy-gn-list"><li><a class="ldy-gn__link" href="https://lingdongyun.site/">官网</a></li><li><a class="ldy-gn__link" href="https://lingdongyun.website/">使用指南</a></li><li><a class="ldy-gn__link" href="https://lingdongyun.best/">套餐选择</a></li><li><a class="ldy-gn__link" href="https://lingdongyun.sbs/">帮助中心</a></li><li><a class="ldy-gn__link" href="/" aria-current="true">新手入门</a></li></ul></div></nav><script>(function(){var l=document.getElementById('ldy-gn-list');if(!l||l.scrollWidth<=l.clientWidth+1)return;var c=l.querySelector('[aria-current]');if(!c)return;var lr=l.getBoundingClientRect(),cr=c.getBoundingClientRect();if(cr.right>lr.right-14)l.scrollLeft+=cr.right-lr.right+14;else if(cr.left<lr.left+4)l.scrollLeft-=lr.left+4-cr.left})();</script>
 <header class="hdr">
 <div class="wrap bar">
 <a href="/" class="brand" aria-label="灵动云新手入门首页">
@@ -432,7 +388,7 @@ addEventListener('pageshow',function(e){if(e.persisted)clear()})}catch(e){}})();
 <b>灵动云</b><em class="role">新手入门</em>
 </a>
 <nav class="nav" aria-label="主导航">
-<a href="#steps">4 步上手</a><a href="#step-2">套餐一览</a><a href="#step-3">客户端</a><a href="#faq">常见问题</a><a href="https://lingdongyun.site/">官网</a>
+<a href="#steps">4 步上手</a><a href="#step-2">套餐一览</a><a href="#step-3">客户端</a><a href="#faq">常见问题</a>
 </nav>
 <div class="hdr-r">
 <a href="https://varnexa.lingdongaff.com/#/?code=HHoxxHGa" target="_blank" rel="noopener" class="btn btn-ink login">注册 / 登录</a>
@@ -442,7 +398,7 @@ addEventListener('pageshow',function(e){if(e.persisted)clear()})}catch(e){}})();
 </div>
 </div>
 <nav class="mnav" id="mnav" aria-label="移动端菜单">
-<a class="l" href="#steps">4 步上手</a><a class="l" href="#step-2">套餐一览</a><a class="l" href="#step-3">客户端</a><a class="l" href="#faq">常见问题</a><a class="l last" href="https://lingdongyun.site/">官网</a>
+<a class="l" href="#steps">4 步上手</a><a class="l" href="#step-2">套餐一览</a><a class="l" href="#step-3">客户端</a><a class="l last" href="#faq">常见问题</a>
 <a href="https://varnexa.lingdongaff.com/#/?code=HHoxxHGa" target="_blank" rel="noopener" class="btn btn-p">注册 / 登录</a>
 </nav>
 </header>
@@ -484,7 +440,7 @@ addEventListener('pageshow',function(e){if(e.persisted)clear()})}catch(e){}})();
 <div class="track">
 <div class="beam" aria-hidden="true"><i></i></div>
 <ol class="steps">
-<li><a class="tile t1" href="#step-1"><span class="n" data-n="1">1</span><div><b>注册账号</b><small>通过官方站点的按钮进入用户中心，开好账号。</small></div></a></li>
+<li><a class="tile t1" href="#step-1"><span class="n" data-n="1">1</span><div><b>注册账号</b><small>通过本页的按钮进入用户中心，开好账号。</small></div></a></li>
 <li><a class="tile t2" href="#step-2"><span class="n" data-n="2">2</span><div><b>选择套餐</b><small>9 档套餐分四类，先按用量挑一档。</small></div></a></li>
 <li><a class="tile t3" href="#step-3"><span class="n" data-n="3">3</span><div><b>下载客户端<wbr>并导入订阅</b><small>按设备装好客户端，粘贴订阅链接。</small></div></a></li>
 <li><a class="tile t4" href="#step-4"><span class="n" data-n="4">4</span><div><b>连接并测试</b><small>选节点、打开连接，用常用网站确认。</small></div></a></li>
@@ -506,9 +462,9 @@ addEventListener('pageshow',function(e){if(e.persisted)clear()})}catch(e){}})();
 </ul>
 </div>
 <div class="panel box">
-<h3>怎么确认是官方站点</h3>
-<p>灵动云有五个官方站点：官网 lingdongyun.site，加上使用指南、套餐选择、帮助中心和你正在看的新手入门，完整名单列在<a class="ln" href="#sites">本页下方</a>。注册和登录，请只通过这五个站点上的按钮进入用户中心。</p>
-<p>遇到其他自称灵动云的网址或链接，先对照官网的<a class="ln" href="https://lingdongyun.site/guides/lingdongyun-official/">官方站点名单</a>核对，再决定要不要输入账号信息。</p>
+<h3>怎么确认是官方入口</h3>
+<p>注册和登录，请只通过本页上的「注册 / 登录」「注册灵动云账号」等按钮进入用户中心。</p>
+<p>遇到其他自称灵动云的网址或链接，先不要输入账号信息，可以登录用户中心提交工单，向客服核实。</p>
 </div>
 </div>
 <div class="acts"><a class="btn btn-p" href="https://varnexa.lingdongaff.com/#/?code=HHoxxHGa" target="_blank" rel="noopener">注册灵动云账号</a><span class="hint">在新标签页打开用户中心</span></div>
@@ -549,8 +505,8 @@ addEventListener('pageshow',function(e){if(e.persisted)clear()})}catch(e){}})();
 </ul>
 </div>
 </div>
-<p class="note">价格以用户中心实时显示为准。季付、半年付的具体金额，见<a href="https://lingdongyun.site/guides/plan-selection/">官网的套餐价格表</a>。</p>
-<div class="acts"><a class="btn btn-p" href="https://varnexa.lingdongaff.com/#/?code=HHoxxHGa" target="_blank" rel="noopener">去用户中心购买套餐</a><a class="more" href="https://lingdongyun.best/">到「套餐选择」估算每月流量 →</a></div>
+<p class="note">价格以用户中心实时显示为准。季付、半年付的具体金额，请登录用户中心查看。</p>
+<div class="acts"><a class="btn btn-p" href="https://varnexa.lingdongaff.com/#/?code=HHoxxHGa" target="_blank" rel="noopener">去用户中心购买套餐</a></div>
 </section>
 
 <section id="step-3" class="wrap sec stp t3" aria-labelledby="s3">
@@ -558,24 +514,24 @@ addEventListener('pageshow',function(e){if(e.persisted)clear()})}catch(e){}})();
 <p class="lede">买好套餐后，先向客服领取订阅链接，再导入设备上的客户端。客户端只是连接工具，本身不带节点；节点列表要通过订阅链接下载，所以做完这一步，设备里才有可选的节点。</p>
 <h3 class="h3s">向客服领取订阅链接</h3>
 <ul class="dots">
-<li>先对照下表定好每台设备装哪个客户端，再到帮助中心打开<a class="ln" href="https://lingdongyun.sbs/">在线客服</a>，或登录用户中心提交工单，把设备和客户端告诉客服。客服会发来对应的链接：Clash Party、Clash Meta for Android 这类 Clash 系客户端用 Clash 订阅链接，v2rayN、v2rayNG 用通用订阅链接，小火箭用小火箭订阅链接。</li>
+<li>先对照下表定好每台设备装哪个客户端，再登录用户中心提交工单，把设备和客户端告诉客服。客服会发来对应的链接：Clash Party、Clash Meta for Android 这类 Clash 系客户端用 Clash 订阅链接，v2rayN、v2rayNG 用通用订阅链接，小火箭用小火箭订阅链接。</li>
 <li>复制后检查一遍：链接要完整，前后不能多出空格。</li>
 <li>订阅链接带有你账号的访问令牌，相当于账号凭证。只导入自己的设备，不要截图发到群里或论坛。</li>
 </ul>
 <h3 class="h3s">按设备选客户端</h3>
 <div class="tbl card dev">
 <table>
-<caption class="sr">不同设备的常用客户端与对应教程</caption>
-<thead><tr><th scope="col">设备</th><th scope="col">常用客户端</th><th scope="col">详细教程</th></tr></thead>
+<caption class="sr">不同设备的常用客户端</caption>
+<thead><tr><th scope="col">设备</th><th scope="col">常用客户端</th></tr></thead>
 <tbody>
-<tr><th scope="row">Windows 电脑</th><td>Clash Party，也可用 v2rayN</td><td><a class="ln" href="https://lingdongyun.website/guides/clash-party/">Clash Party 教程</a><a class="ln" href="https://lingdongyun.website/guides/windows-android-clients/">v2rayN 教程</a></td></tr>
-<tr><th scope="row">Mac 电脑</th><td>Clash Party</td><td><a class="ln" href="https://lingdongyun.website/guides/clash-party/">Clash Party 教程</a></td></tr>
-<tr><th scope="row">Android 手机</th><td>Clash Meta for Android，也可用 v2rayNG</td><td><a class="ln" href="https://lingdongyun.website/guides/clash-subscription/">Clash 订阅导入</a><a class="ln" href="https://lingdongyun.website/guides/windows-android-clients/">v2rayNG 教程</a></td></tr>
-<tr><th scope="row">iPhone / iPad</th><td>小火箭（Shadowrocket）</td><td><a class="ln" href="https://lingdongyun.website/guides/shadowrocket/">小火箭教程</a></td></tr>
+<tr><th scope="row">Windows 电脑</th><td>Clash Party，也可用 v2rayN</td></tr>
+<tr><th scope="row">Mac 电脑</th><td>Clash Party</td></tr>
+<tr><th scope="row">Android 手机</th><td>Clash Meta for Android，也可用 v2rayNG</td></tr>
+<tr><th scope="row">iPhone / iPad</th><td>小火箭（Shadowrocket）</td></tr>
 </tbody>
 </table>
 </div>
-<p class="small">这些客户端都不自带节点，要配合灵动云订阅使用。还拿不准装哪个，可以先看使用指南的<a class="ln" href="https://lingdongyun.website/guides/choose-client/">按设备选客户端</a>。</p>
+<p class="small">这些客户端都不自带节点，要配合灵动云订阅使用。还拿不准装哪个，登录用户中心提交工单，把设备型号告诉客服即可。</p>
 <h3 class="h3s">导入订阅的通用做法</h3>
 <ol class="nums">
 <li>从官方渠道安装客户端：开源客户端到项目的发布页下载，小火箭在 App Store 获取（付费应用）；不要安装来路不明的修改版。</li>
@@ -615,7 +571,7 @@ addEventListener('pageshow',function(e){if(e.persisted)clear()})}catch(e){}})();
 <div class="card sym"><h4><svg viewBox="0 0 24 24" width="22" height="22" class="ic" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>所有节点都超时</h4><p>先确认本地网络正常，再到用户中心看套餐是否有效、流量是否用完；把设备时间设为自动同步，也能排除一类问题。</p></div>
 <div class="card sym"><h4><svg viewBox="0 0 24 24" width="22" height="22" class="ic" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.8 5.5 3.8 9s-1.3 6.5-3.8 9M12 3c-2.5 2.5-3.8 5.5-3.8 9s1.3 6.5 3.8 9"/></svg>显示已连接，网页却打不开</h4><p>看看是否误选了「直连」，或者系统代理没有打开；换一个节点再试。</p></div>
 </div>
-<p class="lede">按上面查过仍然不行，就照帮助中心的<a class="ln" href="https://lingdongyun.sbs/guides/troubleshooting/">连接问题排查步骤</a>逐项检查；也可以在帮助中心找<a class="ln" href="https://lingdongyun.sbs/">在线客服</a>，或登录用户中心提交工单。</p>
+<p class="lede">按上面查过仍然不行，就登录用户中心提交工单，把设备、客户端名称和看到的提示告诉客服，一起排查。</p>
 <h3 class="h3s">用顺手之后，记住这几件事</h3>
 <ul class="dots">
 <li>头几天在不同时段多用用，尤其是晚上，找到自己用着顺手的几个节点。</li>
@@ -628,27 +584,13 @@ addEventListener('pageshow',function(e){if(e.persisted)clear()})}catch(e){}})();
 <section id="faq" class="wrap sec stp t4" aria-labelledby="faq-t">
 <h2 id="faq-t" class="h2l">新手常见问题</h2>
 <div class="card faq">
-<details id="faq-1" open><summary><h3>客户端、订阅和节点是什么关系？</h3><svg viewBox="0 0 24 24" width="20" height="20" class="ic" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary><p>套餐决定你能用多少流量；订阅是一条带访问令牌的链接，客户端靠它下载节点列表；节点是部署在各地区的服务器，连接时从中选一个。一句话：买套餐拿到订阅，订阅交给客户端，客户端连上节点。想把这几个概念弄得更清楚，可以读使用指南里的<a class="ln" href="https://lingdongyun.website/guides/network-basics/">概念说明</a>。</p></details>
+<details id="faq-1" open><summary><h3>客户端、订阅和节点是什么关系？</h3><svg viewBox="0 0 24 24" width="20" height="20" class="ic" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary><p>套餐决定你能用多少流量；订阅是一条带访问令牌的链接，客户端靠它下载节点列表；节点是部署在各地区的服务器，连接时从中选一个。一句话：买套餐拿到订阅，订阅交给客户端，客户端连上节点。</p></details>
 <details id="faq-2"><summary><h3>需要自己写配置文件、懂技术吗？</h3><svg viewBox="0 0 24 24" width="20" height="20" class="ic" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary><p>不需要。订阅导入后，客户端会自动下载节点和配置，你只要选节点、打开连接。大多数设置保持默认就能用，虚拟网卡（TUN）这类进阶选项，等用熟了再研究也不迟。</p></details>
 <details id="faq-3"><summary><h3>一个账号能在几台设备上用？</h3><svg viewBox="0 0 24 24" width="20" height="20" class="ic" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary><p>不限设备数量，电脑、手机、平板都可以导入同一个账号的订阅。这些设备共用套餐流量，设备多、用得多时，选档位要把它们一起算进去。订阅链接只在自己的设备上用，不要分享给别人。</p></details>
 <details id="faq-4"><summary><h3>流量用完或套餐到期会怎样？</h3><svg viewBox="0 0 24 24" width="20" height="20" class="ic" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary><p>月付套餐每月有固定额度；年付的<span class="nw">灵动·穿云</span>每 30 天自动重置 70GB；一次性流量包永久有效、用完为止。额度用完或套餐到期后，客户端里的节点一般会全部超时，到用户中心查看套餐状态，续费或重新选购后即可继续使用。</p></details>
-<details id="faq-5"><summary><h3>节点在哪些地区？能看流媒体、用 AI 工具吗？</h3><svg viewBox="0 0 24 24" width="20" height="20" class="ic" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary><p>节点覆盖香港、台湾、日本、新加坡、美国等地区，使用 IEPL / IPLC 优化线路和 SS（Shadowsocks）协议。支持 Netflix、Disney+、YouTube 等流媒体，也适配 ChatGPT、Claude 等 AI 工具；使用时的注意事项见帮助中心的<a class="ln" href="https://lingdongyun.sbs/guides/ai-network/">流媒体与 AI 工具说明</a>。</p></details>
-<details id="faq-6"><summary><h3>遇到问题怎么联系客服？</h3><svg viewBox="0 0 24 24" width="20" height="20" class="ic" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary><p>有两个渠道：在帮助中心 lingdongyun.sbs 打开在线客服对话，或者登录用户中心提交工单。描述问题时写清设备、客户端名称和看到的提示，排查会顺利很多。</p></details>
-<details id="faq-7"><summary><h3>为什么灵动云有好几个官方站点？</h3><svg viewBox="0 0 24 24" width="20" height="20" class="ic" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary><p>灵动云把内容分给五个官方站点，各管一件事：官网 lingdongyun.site 介绍品牌和套餐，使用指南讲客户端教程，套餐选择帮你比较套餐、估算流量，帮助中心负责排查问题和在线客服，本站只讲第一次使用的四个步骤。完整名单见下方的「<a class="ln" href="#sites">灵动云官方站点</a>」。</p></details>
+<details id="faq-5"><summary><h3>节点在哪些地区？能看流媒体、用 AI 工具吗？</h3><svg viewBox="0 0 24 24" width="20" height="20" class="ic" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary><p>节点覆盖香港、台湾、日本、新加坡、美国等地区，使用 IEPL / IPLC 优化线路和 SS（Shadowsocks）协议。支持 Netflix、Disney+、YouTube 等流媒体，也适配 ChatGPT、Claude 等 AI 工具。</p></details>
+<details id="faq-6"><summary><h3>遇到问题怎么联系客服？</h3><svg viewBox="0 0 24 24" width="20" height="20" class="ic" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary><p>遇到问题，请登录用户中心提交工单。描述问题时写清设备、客户端名称和看到的提示，排查会顺利很多。</p></details>
 </div>
-</section>
-
-<section id="sites" class="wrap sec" data-ldy-family aria-labelledby="sites-t">
-<h2 id="sites-t" class="h2l">灵动云官方站点</h2>
-<p class="fam-i">灵动云的内容分布在以下五个官方站点，各自负责一件事。</p>
-<ul class="fam">
-<li class="card"><a href="https://lingdongyun.site/">灵动云官网</a><small>lingdongyun.site</small><p>品牌介绍、9 档套餐与注册入口</p></li>
-<li class="card"><a href="https://lingdongyun.website/">灵动云使用指南</a><small>lingdongyun.website</small><p>按设备整理的客户端与订阅导入教程</p></li>
-<li class="card"><a href="https://lingdongyun.best/">灵动云套餐选择</a><small>lingdongyun.best</small><p>9 档套餐对比与每月流量估算</p></li>
-<li class="card"><a href="https://lingdongyun.sbs/">灵动云帮助中心</a><small>lingdongyun.sbs</small><p>连接问题排查、网络知识与在线客服</p></li>
-<li class="card cur" aria-current="page"><span class="fn">灵动云新手入门</span><em class="badge">当前站点</em><small>lingdongyun.lol</small><p>注册、选套餐、导入订阅、连接，4 步上手</p></li>
-</ul>
-<p class="fam-o"><a href="https://lingdongyun.site/guides/lingdongyun-official/">查看官方站点说明</a></p>
 </section>
 
 </main>
@@ -664,7 +606,7 @@ addEventListener('pageshow',function(e){if(e.persisted)clear()})}catch(e){}})();
 </nav>
 </div>
 <div class="wrap legal">
-<p>本站是灵动云官方「新手入门」站点。官网：<a href="https://lingdongyun.site/">lingdongyun.site</a> · <a href="https://lingdongyun.site/guides/lingdongyun-official/">官方站点说明</a></p>
+<p>本站是灵动云官方「新手入门」站点。</p>
 <p>价格与套餐规则以用户中心实时显示为准。</p>
 </div>
 </footer>
