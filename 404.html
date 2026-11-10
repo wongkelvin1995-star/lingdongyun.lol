@@ -93,38 +93,8 @@ p{margin:0 0 24px;color:var(--ink2)}
 .ft a{display:inline-block;padding:8px 0;color:var(--ink2);text-decoration:underline;text-decoration-color:rgba(30,18,53,.2);text-underline-offset:3px}
 @media (max-width:420px){main{padding:28px 18px 22px}.acts .b{width:100%}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
-/* 灵动云官方站点导航：五站共用，勿单独修改（源文件 tools/gnav.py） */
-.ldy-gn{position:relative;z-index:60;background:#110b2b;color:#ddd7fb;border-bottom:1px solid rgba(255,255,255,.08);padding-top:env(safe-area-inset-top,0px);font:500 13.5px/1 "PingFang SC","HarmonyOS Sans SC","MiSans","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",system-ui,-apple-system,sans-serif;letter-spacing:.01em;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%;text-size-adjust:100%}
-.ldy-gn *,.ldy-gn *::before,.ldy-gn *::after{box-sizing:border-box}
-.ldy-gn .ldy-gn__in{display:flex;align-items:center;gap:20px;max-width:1200px;height:40px;margin:0 auto;padding:0 max(20px,env(safe-area-inset-right,0px)) 0 max(20px,env(safe-area-inset-left,0px))}
-.ldy-gn a{color:inherit;text-decoration:none;-webkit-tap-highlight-color:transparent}
-.ldy-gn .ldy-gn__brand{display:inline-flex;flex:none;align-items:center;gap:9px;height:100%;color:#fff}
-.ldy-gn .ldy-gn__logo{display:block;flex:none;width:22px;height:22px;margin:0;border:0}
-.ldy-gn .ldy-gn__name{font-size:14px;font-weight:600;letter-spacing:.04em;color:#fff}
-.ldy-gn .ldy-gn__tag{padding-left:9px;border-left:1px solid rgba(255,255,255,.18);font-size:12.5px;font-weight:500;color:rgba(221,215,251,.66)}
-.ldy-gn .ldy-gn__list{display:flex;align-items:stretch;gap:2px;height:100%;margin:0 0 0 auto;padding:0;list-style:none}
-.ldy-gn .ldy-gn__list li{display:flex;margin:0;padding:0;list-style:none}
-.ldy-gn .ldy-gn__list li::before,.ldy-gn .ldy-gn__list li::marker{content:none}
-.ldy-gn .ldy-gn__link{position:relative;display:inline-flex;align-items:center;height:100%;padding:0 12px;white-space:nowrap;color:rgba(221,215,251,.74);transition:color .15s ease}
-.ldy-gn .ldy-gn__link:hover{color:#fff}
-.ldy-gn .ldy-gn__link[aria-current]{color:#fff;font-weight:600}
-.ldy-gn .ldy-gn__link[aria-current]::after{content:"";position:absolute;left:12px;right:12px;bottom:0;height:2px;border-radius:2px 2px 0 0;background:#a693ff}
-.ldy-gn .ldy-gn__brand:focus-visible,.ldy-gn .ldy-gn__link:focus-visible{outline:2px solid #b9abff;outline-offset:-3px;border-radius:6px}
-@media (max-width:720px){
-.ldy-gn .ldy-gn__in{gap:4px;height:44px;padding-right:0;padding-left:max(14px,env(safe-area-inset-left,0px))}
-.ldy-gn .ldy-gn__tag{display:none}
-.ldy-gn .ldy-gn__list{flex:1 1 auto;min-width:0;margin-left:0;padding:0 8px 0 4px;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x proximity;scrollbar-width:none;-webkit-overflow-scrolling:touch;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 8px,#000 calc(100% - 14px),transparent);mask-image:linear-gradient(90deg,transparent 0,#000 8px,#000 calc(100% - 14px),transparent)}
-.ldy-gn .ldy-gn__list::-webkit-scrollbar{display:none}
-.ldy-gn .ldy-gn__list li{scroll-snap-align:start}
-.ldy-gn .ldy-gn__link{padding:0 7px;font-size:13.5px}
-.ldy-gn .ldy-gn__link[aria-current]::after{left:7px;right:7px}
-}
-@media (max-width:480px){.ldy-gn .ldy-gn__name{display:none}.ldy-gn .ldy-gn__brand{min-width:40px}}
-@media (prefers-reduced-motion:reduce){.ldy-gn .ldy-gn__link{transition:none}}
-@media print{.ldy-gn{display:none}}
 /* 404 页的 body 是居中网格：让顶部导航单独占满第一行，不再把页面撑宽（手机上会左右晃） */
 body{grid-template-rows:auto 1fr;padding-top:0}
-body>.ldy-gn{justify-self:stretch;align-self:start;min-width:0;margin:0 -16px 32px}
 </style>
 <!-- 悬停或按下链接时预先加载同站页面，点击后打开更快（只在支持的浏览器生效） -->
 <script type="speculationrules">{"prefetch":[{"where":{"and":[{"href_matches":"/*"},{"not":{"selector_matches":"[target=_blank], [download], [rel~=nofollow]"}}]},"eagerness":"moderate"}]}</script>
@@ -149,7 +119,6 @@ if(u.protocol!=='http:'&&u.protocol!=='https:')return;
 if(u.href.split('#')[0]===location.href.split('#')[0])return;
 show()},false);
 addEventListener('pageshow',function(e){if(e.persisted)clear()})}catch(e){}})();</script><!-- /ldy-motion:intro -->
-<nav class="ldy-gn" aria-label="灵动云官方站点"><div class="ldy-gn__in"><a class="ldy-gn__brand" href="https://lingdongyun.site/" aria-label="灵动云官网"><img class="ldy-gn__logo" src="/brand/logo.svg" width="22" height="22" alt="" decoding="async"><span class="ldy-gn__name">灵动云</span><span class="ldy-gn__tag">官方站点</span></a><ul class="ldy-gn__list" id="ldy-gn-list"><li><a class="ldy-gn__link" href="https://lingdongyun.site/">官网</a></li><li><a class="ldy-gn__link" href="https://lingdongyun.website/">使用指南</a></li><li><a class="ldy-gn__link" href="https://lingdongyun.best/">套餐选择</a></li><li><a class="ldy-gn__link" href="https://lingdongyun.sbs/">帮助中心</a></li><li><a class="ldy-gn__link" href="/" aria-current="true">新手入门</a></li></ul></div></nav><script>(function(){var l=document.getElementById('ldy-gn-list');if(!l||l.scrollWidth<=l.clientWidth+1)return;var c=l.querySelector('[aria-current]');if(!c)return;var lr=l.getBoundingClientRect(),cr=c.getBoundingClientRect();if(cr.right>lr.right-14)l.scrollLeft+=cr.right-lr.right+14;else if(cr.left<lr.left+4)l.scrollLeft-=lr.left+4-cr.left})();</script>
 <main>
 <div class="lock"><img src="/brand/logo.svg" alt="" width="32" height="32"><b>灵动云</b><em class="role">新手入门</em></div>
 <div class="big" aria-hidden="true"><span class="a" data-c="4">4</span><span class="b" data-c="0">0</span><span class="c" data-c="4">4</span></div>
@@ -159,7 +128,7 @@ addEventListener('pageshow',function(e){if(e.persisted)clear()})}catch(e){}})();
 <a class="b p" href="/">返回首页</a>
 <a class="b s" href="/#step-1">从第 1 步开始</a>
 </div>
-<p class="ft">本站是灵动云官方「新手入门」站点。官网：<a href="https://lingdongyun.site/">lingdongyun.site</a> · <a href="https://lingdongyun.site/guides/lingdongyun-official/">官方站点说明</a></p>
+<p class="ft">本站是灵动云官方「新手入门」站点。</p>
 </main>
 <!-- ldy-motion:reveal --><script>(function(){var d=document.documentElement;if(!d.classList.contains('ldy-motion'))return;try{
 var C={"e":"cubic-bezier(.34,1.56,.64,1)","p":{"up":{"f":{"opacity":0,"translate":"0 24px"},"d":850},"visual":{"f":{"opacity":0,"translate":"0 26px","scale":".9"},"d":1100},"pop":{"f":{"opacity":0,"translate":"0 28px","scale":".92","rotate":"-3deg"},"d":900},"card":{"f":{"opacity":0,"translate":"0 22px","scale":".96"},"d":800}},"g":[["#steps .h2c","up",0],[".steps > li","pop",110],[".stp .sh","pop",0],[".stp > .lede","up",0],[".stp > .tip","up",0],[".stp .box","card",90],[".stp .ov .og","card",80],[".stp > .h3s","up",0],[".stp > .tbl","card",0],[".stp > .acts","up",0],["#sites li","card",70]]},tr=window.CSS&&CSS.supports&&CSS.supports('translate','1px')&&CSS.supports('scale','1')&&CSS.supports('rotate','1deg');
